@@ -11,7 +11,7 @@
 							'host' => 'localhost',
 							'user' => 'root',
 							'pass' => '',
-							'name' => 'dabberni'
+							'name' => 'solutions'
 						);
 	
 
