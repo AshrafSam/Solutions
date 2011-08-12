@@ -1,0 +1,19 @@
+			<h2>الفروع الموجودة</h2>
+
+			<table>
+				<tr class="head">
+					<td style="width: 200px">اسم الفرع</td>
+					<td style="width: 100px">مواد الفرع</td>
+					<td style="width: 100px">أساتذة الفرع</td>
+					<td style="width: 150px">خيارات</td>
+				</tr>
+
+				{foreach $branches as $branch}
+				<tr>
+					<td>{$branch->branchtitle}</td>
+					<td><a href="{$controller}/subject/show/?bid={$branch->branchid}">{if $branch->subjects_num === NULL}0{else}{$branch->subjects_num}{/if}</a></td>
+					<td><a href="{$controller}/teacher/show/?bid={$branch->branchid}">{if $branch->teachers_num === NULL}0{else}{$branch->teachers_num}{/if}</a></td>
+					<td><a href="{$controller}/branch/edit/?bid={$branch->branchid}">تعديل</a> - <a href="{$controller}/branch/delete/?bid={$branch->branchid}">حذف</a></td>
+				</tr>
+				{/foreach}
+			</table>

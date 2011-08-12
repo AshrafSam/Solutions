@@ -1,0 +1,374 @@
+body {
+	background: #fff url(./images/bg.png);
+	margin: 0
+}
+
+#top_bar {
+	height: 5px;
+	margin: 0;
+	background-color: #96bc32
+}
+
+#page_frame {
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+	padding-left: 18px
+}
+
+#page_frame .top_bar {
+	height: 5px;
+	width: 100%;
+	background-color: #96bc32;
+	position: absolute;
+	top: -5px
+}
+
+#page_contents {
+	margin: 0 18px 0 18px
+}
+
+#header {
+	height: 150px;
+	margin: 0
+}
+
+#header #logo {
+	float: right;
+	margin-top: 18px;
+	width: 188px;
+	height: 86px;
+	background: url(./images/logo.png);
+	position: relative
+}
+
+#header #logo #slogan {
+	position: absolute;
+	bottom: -23px;
+	width: 100%;
+	text-align: center;
+	color: #999;
+	font: 13px tahoma
+}
+
+#header #top_description {
+	float: left;
+	clear: left;
+	color: #666;
+	font: 18px tahoma;
+	margin-top: 24px
+}
+
+#header #social_networks {
+	float: left;
+	margin-top: 4px;
+	height: 32px
+}
+
+#header #social_networks .icon {
+	width: 32px;
+	height: 32px
+}
+
+#header #social_networks .icon a, #header #logo a {
+	display: block;
+	width: 100%;
+	height: 100%
+}
+
+#header #social_networks .facebook {
+	float: left;
+	background-image: url(./images/icons/facebook.png)
+}
+
+#header #social_networks .twitter {
+	float: left;
+	margin-left: 5px;
+	background-image: url(./images/icons/twitter.png)
+}
+
+#header #social_networks .title {
+	float: left;
+	font: 14px tahoma;
+	font-weight: 100;
+	color: #666;
+	padding-left: 10px;
+	padding-top: 7px
+}
+
+#instructions {
+	width: 100%;
+	height: 290px;
+	margin: 20px auto
+}
+
+#instructions .green_box .box_contents {
+	height: 270px;
+	background: url(./images/booklet.png) no-repeat 70px 0
+}
+
+#instructions .green_box .box_contents .box_title {
+	padding-top: 18px;
+	padding-right: 30px;
+	font: bold 20px tahoma;
+	color: #fff
+}
+
+#instructions .green_box .box_contents .box_description {
+	float: right;
+	margin-right: 30px;
+	margin-top: 4px;
+	padding-bottom: 5px;
+	font: 20px tahoma;
+	color: #fff;
+	border-bottom: 15px solid #fff
+}
+
+#instructions .green_box .box_contents .steps {
+	clear: both;
+	padding-right: 38px;
+	padding-top: 28px
+}
+
+#instructions .green_box .box_contents .steps .step {
+	clear: both
+}
+
+#instructions .green_box .box_contents .steps .step .number {
+	float: right;
+	width: 30px;
+	background-color: #fff;
+	text-align: center;
+	color: #9fcb40;
+	font: bold 24px tahoma;
+	padding: 5px 0 5px 0
+}
+
+#instructions .green_box .box_contents .steps .step .text {
+	float: right;
+	font: 20px tahoma;
+	color: #fff;
+	padding-top: 6px;
+	padding-right: 10px
+}
+
+h2 {
+	font: bold 27px tahoma;
+	color: #333;
+	margin: 0
+}
+
+.items {
+	padding-right: 9px
+}
+
+.items .item {
+	float: right;
+	clear: both;
+	margin-top: 27px;
+	margin-right: 6px;
+	margin-bottom: 20px;
+	height: 45px;
+	width: 924px
+}
+
+.items .item .add_to_bag_button {
+	margin-right: 30px
+}
+
+.items .itembar {
+	float: right;
+	width: 680px;
+	font: 24px tahoma;
+	color: #465d13
+}
+
+.items .itembar a {
+	color: #465d13;
+	text-decoration: none
+}
+
+.items .itembar a:hover {
+	color: #1f2a06
+}
+
+.items .itembar .bar_contents {
+	padding: 7px 12px 7px 12px
+}
+
+.items .itembar .bar_contents .bar_title {
+	font-weight: bold
+}
+
+.items .itembar .bar_left_contents {
+	float: left;
+	color: #333
+}
+
+.items .item .add_to_bag_button {
+	float: right;
+	width: 182px
+}
+
+.items .item .add_to_bag_button .button_contents {
+	text-align: right;
+	padding-right: 10px;
+	position: relative
+}
+
+.items .item .add_to_bag_button .bag {
+	position: absolute;
+	width: 37px;
+	height: 85px;
+	background: url(./images/bag.png);
+	left: 10px;
+	top: -25px
+}
+
+.items .item .what_is_this {
+	clear: both;
+	font: bold 16px tahoma;
+	color: #666
+}
+
+.items .item .what_is_this a {
+	color: #666;
+	text-decoration: none
+}
+
+.items .item .what_is_this a:hover {
+	color: #444
+}
+
+/** Boxes **/
+/* Green Box */
+.green_box {
+	background-color: #9fcb40;
+	position: relative
+}
+
+.green_box .box_right {
+	background: url(./images/boxes/green/right.png) repeat-y right;
+	width: 100%
+}
+
+.green_box .box_left {
+	background: url(./images/boxes/green/left.png) repeat-y left;
+	width: 100%
+}
+
+.green_box .box_contents {
+	margin: 0 9px 0 9px;
+	position: relative
+}
+
+.green_box .box_top_right {
+	position: absolute;
+	right: -9px;
+	width: 9px;
+	height: 10px;
+	background: url(./images/boxes/green/top_right.png)
+}
+
+.green_box .box_top_left {
+	position: absolute;
+	left: -9px;
+	width: 9px;
+	height: 10px;
+	background: url(./images/boxes/green/top_left.png)
+}
+
+.green_box .box_bottom_right {
+	position: absolute;
+	right: -9px;
+	width: 9px;
+	height: 10px;
+	background: url(./images/boxes/green/bottom_right.png)
+}
+
+.green_box .box_bottom_left {
+	position: absolute;
+	left: -9px;;
+	width: 9px;
+	height: 10px;
+	background: url(./images/boxes/green/bottom_left.png)
+}
+
+.green_box .box_top {
+	position: absolute;
+	top: -10px;
+	height: 10px;
+	width: 100%;
+	background: url(./images/boxes/green/top.png) top repeat-x
+}
+
+.green_box .box_bottom {
+	position: absolute;
+	bottom: -10px;
+	height: 10px;
+	width: 100%;
+	background: url(./images/boxes/green/bottom.png) bottom repeat-x
+}
+
+/* Item Bar */
+.itembar {
+	background-color: #edf7d7;
+	height: 45px;
+	position: relative
+}
+
+.itembar .bar_left {
+	position: absolute;
+	left: -9px;
+	width: 9px;
+	height: 45px;
+	background: url(./images/boxes/itembar/left.png)
+}
+
+.itembar .bar_right {
+	position: absolute;
+	right: -9px;
+	width: 9px;
+	height: 45px;
+	background: url(./images/boxes/itembar/right.png)
+}
+
+/** Buttons **/
+/* Orange Button */
+.orange_button {
+	height: 47px;
+	background: url(./images/buttons/orange/body.png);
+	position: relative
+}
+
+.orange_button .button_right {
+	position: absolute;
+	right: -9px;
+	height: 47px;
+	width: 9px;
+	background: url(./images/buttons/orange/right.png)
+}
+
+.orange_button .button_left {
+	position: absolute;
+	left: -9px;
+	height: 47px;
+	width: 9px;
+	background: url(./images/buttons/orange/left.png)
+}
+
+.orange_button .button_contents {
+	font: bold 18px tahoma;
+	color: #683b0e;
+	padding-top: 12px;
+	text-align: center
+}
+
+.orange_button a {
+	color: #683b0e;
+	text-decoration: none
+}
+
+.orange_button a:hover {
+	color: #4b2906
+}

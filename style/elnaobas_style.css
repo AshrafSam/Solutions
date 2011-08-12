@@ -1,0 +1,116 @@
+body {
+	margin: 0;
+	background: url(./images/bg.png)
+}
+
+#topbar {
+	background-color: #9fcb40;
+	font: bold 10pt tahoma;
+	color: #fff
+}
+
+#topbar a {
+	display: inline-block;
+	padding: 5px 5px 9px 5px;
+	border-top: 4px #9fcb40 solid;
+	text-decoration: none;
+	color: #fff
+}
+
+#topbar a:hover {
+	border-top: 4px #fff solid
+}
+
+#header {
+	text-align: center;
+	padding-top: 20px;
+	font: bold 30px tahoma;
+	color: #f5901d
+}
+
+#sidebar {
+	float: right;
+	width: 200px;
+/*	background-color: #dbfb8d;*/
+	margin-right: 30px
+}
+
+#sidebar .cat {
+	padding: 5px;
+	font: bold 13pt arial;
+	background-color: #a7e425;
+	color: #2a3e00
+}
+
+#sidebar .item {
+	font: bold 11pt arial
+}
+
+#sidebar .item a {
+	padding: 5px;
+	background-color: #e7ffb3;
+	display: block;
+	text-decoration: none;
+	color: #4a4a4a
+}
+
+#sidebar .item a:hover {
+	background-color: #fff
+}
+
+#contents {
+	float: right;
+	margin-right: 20px;
+	margin-top: 30px
+}
+
+#contents h2 {
+	margin: 0 0 10px 0;
+	padding: 0 0 5px 0;
+	border-bottom: 2px #17c300 solid;
+	font: bold 14pt arial;
+	color: #17c300
+}
+
+#contents table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+#contents table tr {
+	font: 10pt tahoma
+}
+
+#contents table tr.head, #contents table td.head {
+	background-color: #fff3ce;
+	font: bold 10pt tahoma;
+	color: #878787
+}
+
+#contents table td {
+	padding: 6px
+}
+
+#contents table td a {
+	text-decoration: none;
+	color: #727272
+}
+
+#contents table td a:hover {
+	color: #000
+}
+
+#contents table td input {
+	border: 1px #9d9d9d solid;
+	padding: 3px;
+	font: 11pt tahoma;
+	color: #787878
+}
+
+#contents input.button {
+	border: 1px #9d9d9d solid;
+	padding: 3px;
+	background-color: #d5ffc7;
+	color: #6b6b6b;
+	font: bold 12pt arial
+}

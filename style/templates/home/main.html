@@ -1,0 +1,42 @@
+
+				<div id="create_protest_area">
+					<div class="create_btn">
+						<div class="create_btn_left"></div>
+						<div class="create_btn_right"></div>
+						<div class="create_btn_body"><a href="./protest/create">create a protest</a></div>
+					</div>
+					
+					<div class="create_protest_desc">
+						Anyone can create a protest. Make sure your protests<br />
+						demands a right and does not ecnourage violence.<br />
+						Protests to promote illegal stuff will be automatically banned
+					</div>
+				</div>
+				<br /><br /><br />
+				
+				<div class="section">
+					<!--<h1>protests nearby</h1>-->
+					<h1>recent protests</h1>
+					
+					{foreach from=$nearby_protests item=protest}
+					<div class="protest_line">
+						<div class="basic_info">
+							<div class="protest_title"><a href="./protest/?pid={$protest->protestid}">{$protest->title}</a></div>
+							<div class="nearest_event">{if $protest->last_event === false}-- no action taken yet{else}<a href="./protest/event/?eid={$protest->last_event->eventid}">{$protest->last_event->title}</a>{/if}</div>
+						</div>
+						
+						<div class="participants">
+							<div class="number">{$protest->vowers_num}</div>
+							<div class="participants_desc">vowed already</div>
+						</div>
+						
+						{if !$protest->is_vowed}
+						<div class="vow_btn">
+							<div class="vow_btn_left"></div>
+							<div class="vow_btn_right"></div>
+							<div class="vow_btn_body"><a href="./protest/vow/?pid={$protest->protestid}">vow</a></div>
+						</div>
+						{/if}
+					</div>
+					{/foreach}
+				</div>
