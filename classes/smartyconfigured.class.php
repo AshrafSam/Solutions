@@ -9,7 +9,7 @@ class SmartyConfigured extends Smarty {
         parent::__construct();
 
 				$this->template_dir = ROOT_PATH .'style/templates/';
-				$this->compile_dir = ROOT_PATH .'includes/TemplateLite/compiled/';
+				$this->compile_dir = ROOT_PATH .'includes/smarty/compiled/';
 
         //$this->caching = Smarty::CACHING_LIFETIME_CURRENT;
    }
