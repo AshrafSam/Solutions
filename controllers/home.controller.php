@@ -16,9 +16,13 @@
 		protected function test_action() {
 			$this->show_header();
 			
-			echo 'test';
+			echo '<form action method="POST"><input name="i" type="text"/><input type="submit"/></form>';
 
 			$this->show_footer();
+		}
+
+		protected function join_action_post() {
+			echo $_POST['i'];
 		}
 	}
 
